@@ -1,0 +1,681 @@
+{
+ "seed": 16,
+ "box_differs_from_documentation": {
+  "V.k10": 32,
+  "stages": 5,
+  "V.lit_10": 20.0,
+  "V.d_used": true
+ },
+ "gate0": {
+  "verdict_right": true,
+  "said_match": false,
+  "changed": 4,
+  "named": 4,
+  "values_right": 4,
+  "false_alarms": {},
+  "rows": {
+   "V.k10": {
+    "truth": 32,
+    "claimed": 32,
+    "named": true,
+    "value_ok": true
+   },
+   "stages": {
+    "truth": 5,
+    "claimed": 5,
+    "named": true,
+    "value_ok": true
+   },
+   "V.lit_10": {
+    "truth": 20.0,
+    "claimed": 20,
+    "named": true,
+    "value_ok": true
+   },
+   "V.d_used": {
+    "truth": true,
+    "claimed": true,
+    "named": true,
+    "value_ok": true
+   }
+  }
+ },
+ "gate1": {
+  "right": 19,
+  "of": 19,
+  "rows": {
+   "V.a": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.c": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.d": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "X.a": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "Z.b": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k1": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k2": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k3": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k4": {
+    "truth": "DEAD",
+    "answer": "DEAD"
+   },
+   "V.k6": {
+    "truth": "DEAD",
+    "answer": "DEAD"
+   },
+   "V.k7": {
+    "truth": "DEAD",
+    "answer": "DEAD"
+   },
+   "V.k8": {
+    "truth": "DEAD",
+    "answer": "DEAD"
+   },
+   "V.k9": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k10": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "V.k11": {
+    "truth": "DEAD",
+    "answer": "DEAD"
+   },
+   "X.k1": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "Y.k1": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "Z.k1": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   },
+   "Z.k2": {
+    "truth": "LIVE",
+    "answer": "LIVE"
+   }
+  }
+ },
+ "gate2": {
+  "right": 8,
+  "of": 8,
+  "rows": {
+   "a": {
+    "case": "V.k10 set to 80",
+    "truth": 93.0,
+    "predicted": 93.0,
+    "ok": true
+   },
+   "b": {
+    "case": "V.k10 set to 25",
+    "truth": 35.0,
+    "predicted": 35.0,
+    "ok": true
+   },
+   "c": {
+    "case": "one more one-tick stage inserted between X and Y",
+    "truth": 44.0,
+    "predicted": 44.0,
+    "ok": true
+   },
+   "d": {
+    "case": "V.k9 set to 0.3",
+    "truth": "silent",
+    "predicted": "silent",
+    "ok": true
+   },
+   "e": {
+    "case": "V.k9 set to 0.03",
+    "truth": "silent",
+    "predicted": "silent",
+    "ok": true
+   },
+   "f": {
+    "case": "V.k3 set to 6",
+    "truth": "silent",
+    "predicted": "silent",
+    "ok": true
+   },
+   "g": {
+    "case": "V.k10 set to 80 and two more stages between X and Y",
+    "truth": 97.0,
+    "predicted": 97.0,
+    "ok": true
+   },
+   "h": {
+    "case": "V.k9 set to 0.3, with U.k1 = 1.6",
+    "truth": 46.0,
+    "predicted": 46.0,
+    "ok": true
+   }
+  }
+ },
+ "gate3": {
+  "attempts": 1,
+  "first": {
+   "silent_is_silent": true,
+   "silent_is_excitable": true,
+   "clock_beats": true,
+   "true_period": 83.0,
+   "predicted_period": 83,
+   "period_ok": true,
+   "change": 0.1483000000000001,
+   "pass": true
+  },
+  "passed_on_attempt": 1,
+  "last": {
+   "silent_is_silent": true,
+   "silent_is_excitable": true,
+   "clock_beats": true,
+   "true_period": 83.0,
+   "predicted_period": 83,
+   "period_ok": true,
+   "change": 0.1483000000000001,
+   "pass": true
+  },
+  "last_answer": {
+   "silent": 1.475,
+   "clock": 1.3267,
+   "period": 83
+  }
+ },
+ "gate4": {
+  "attempts": 1,
+  "first": {
+   "kept": 12,
+   "of": 12,
+   "bits": 40,
+   "held_laps": 100,
+   "held_ticks": 4000,
+   "pass": true,
+   "patterns": [
+    {
+     "ones": 0,
+     "kept": true
+    },
+    {
+     "ones": 1,
+     "kept": true
+    },
+    {
+     "ones": 14,
+     "kept": true
+    },
+    {
+     "ones": 15,
+     "kept": true
+    },
+    {
+     "ones": 12,
+     "kept": true
+    },
+    {
+     "ones": 12,
+     "kept": true
+    },
+    {
+     "ones": 10,
+     "kept": true
+    },
+    {
+     "ones": 18,
+     "kept": true
+    },
+    {
+     "ones": 14,
+     "kept": true
+    },
+    {
+     "ones": 16,
+     "kept": true
+    },
+    {
+     "ones": 10,
+     "kept": true
+    },
+    {
+     "ones": 8,
+     "kept": true
+    }
+   ]
+  },
+  "passed_on_attempt": 1,
+  "last": {
+   "kept": 12,
+   "of": 12,
+   "bits": 40,
+   "held_laps": 100,
+   "held_ticks": 4000,
+   "pass": true,
+   "patterns": [
+    {
+     "ones": 0,
+     "kept": true
+    },
+    {
+     "ones": 1,
+     "kept": true
+    },
+    {
+     "ones": 14,
+     "kept": true
+    },
+    {
+     "ones": 15,
+     "kept": true
+    },
+    {
+     "ones": 12,
+     "kept": true
+    },
+    {
+     "ones": 12,
+     "kept": true
+    },
+    {
+     "ones": 10,
+     "kept": true
+    },
+    {
+     "ones": 18,
+     "kept": true
+    },
+    {
+     "ones": 14,
+     "kept": true
+    },
+    {
+     "ones": 16,
+     "kept": true
+    },
+    {
+     "ones": 10,
+     "kept": true
+    },
+    {
+     "ones": 8,
+     "kept": true
+    }
+   ]
+  },
+  "last_answer": {
+   "units": [
+    18.0,
+    18.0,
+    18.0,
+    18.0,
+    18.0,
+    18.0,
+    18.0,
+    18.0
+   ],
+   "edges": [
+    [
+     "0:Z.p0",
+     "0:V.a",
+     -1.0
+    ],
+    [
+     "0:Z.p0",
+     "1:V.c",
+     -3.42
+    ],
+    [
+     "0:Z.p1",
+     "0:V.a",
+     -1.0
+    ],
+    [
+     "0:Z.p1",
+     "1:V.c",
+     -3.42
+    ],
+    [
+     "0:Z.p2",
+     "0:V.a",
+     -1.0
+    ],
+    [
+     "0:Z.p2",
+     "1:V.c",
+     -3.42
+    ],
+    [
+     "0:Z.p3",
+     "0:V.a",
+     -1.0
+    ],
+    [
+     "0:Z.p3",
+     "1:V.c",
+     -3.42
+    ],
+    [
+     "1:Z.p0",
+     "1:V.a",
+     -1.0
+    ],
+    [
+     "1:Z.p0",
+     "2:V.c",
+     -3.42
+    ],
+    [
+     "1:Z.p1",
+     "1:V.a",
+     -1.0
+    ],
+    [
+     "1:Z.p1",
+     "2:V.c",
+     -3.42
+    ],
+    [
+     "1:Z.p2",
+     "1:V.a",
+     -1.0
+    ],
+    [
+     "1:Z.p2",
+     "2:V.c",
+     -3.42
+    ],
+    [
+     "1:Z.p3",
+     "1:V.a",
+     -1.0
+    ],
+    [
+     "1:Z.p3",
+     "2:V.c",
+     -3.42
+    ],
+    [
+     "2:Z.p0",
+     "2:V.a",
+     -1.0
+    ],
+    [
+     "2:Z.p0",
+     "3:V.c",
+     -3.42
+    ],
+    [
+     "2:Z.p1",
+     "2:V.a",
+     -1.0
+    ],
+    [
+     "2:Z.p1",
+     "3:V.c",
+     -3.42
+    ],
+    [
+     "2:Z.p2",
+     "2:V.a",
+     -1.0
+    ],
+    [
+     "2:Z.p2",
+     "3:V.c",
+     -3.42
+    ],
+    [
+     "2:Z.p3",
+     "2:V.a",
+     -1.0
+    ],
+    [
+     "2:Z.p3",
+     "3:V.c",
+     -3.42
+    ],
+    [
+     "3:Z.p0",
+     "3:V.a",
+     -1.0
+    ],
+    [
+     "3:Z.p0",
+     "4:V.c",
+     -3.42
+    ],
+    [
+     "3:Z.p1",
+     "3:V.a",
+     -1.0
+    ],
+    [
+     "3:Z.p1",
+     "4:V.c",
+     -3.42
+    ],
+    [
+     "3:Z.p2",
+     "3:V.a",
+     -1.0
+    ],
+    [
+     "3:Z.p2",
+     "4:V.c",
+     -3.42
+    ],
+    [
+     "3:Z.p3",
+     "3:V.a",
+     -1.0
+    ],
+    [
+     "3:Z.p3",
+     "4:V.c",
+     -3.42
+    ],
+    [
+     "4:Z.p0",
+     "4:V.a",
+     -1.0
+    ],
+    [
+     "4:Z.p0",
+     "5:V.c",
+     -3.42
+    ],
+    [
+     "4:Z.p1",
+     "4:V.a",
+     -1.0
+    ],
+    [
+     "4:Z.p1",
+     "5:V.c",
+     -3.42
+    ],
+    [
+     "4:Z.p2",
+     "4:V.a",
+     -1.0
+    ],
+    [
+     "4:Z.p2",
+     "5:V.c",
+     -3.42
+    ],
+    [
+     "4:Z.p3",
+     "4:V.a",
+     -1.0
+    ],
+    [
+     "4:Z.p3",
+     "5:V.c",
+     -3.42
+    ],
+    [
+     "5:Z.p0",
+     "5:V.a",
+     -1.0
+    ],
+    [
+     "5:Z.p0",
+     "6:V.c",
+     -3.42
+    ],
+    [
+     "5:Z.p1",
+     "5:V.a",
+     -1.0
+    ],
+    [
+     "5:Z.p1",
+     "6:V.c",
+     -3.42
+    ],
+    [
+     "5:Z.p2",
+     "5:V.a",
+     -1.0
+    ],
+    [
+     "5:Z.p2",
+     "6:V.c",
+     -3.42
+    ],
+    [
+     "5:Z.p3",
+     "5:V.a",
+     -1.0
+    ],
+    [
+     "5:Z.p3",
+     "6:V.c",
+     -3.42
+    ],
+    [
+     "6:Z.p0",
+     "6:V.a",
+     -1.0
+    ],
+    [
+     "6:Z.p0",
+     "7:V.c",
+     -3.42
+    ],
+    [
+     "6:Z.p1",
+     "6:V.a",
+     -1.0
+    ],
+    [
+     "6:Z.p1",
+     "7:V.c",
+     -3.42
+    ],
+    [
+     "6:Z.p2",
+     "6:V.a",
+     -1.0
+    ],
+    [
+     "6:Z.p2",
+     "7:V.c",
+     -3.42
+    ],
+    [
+     "6:Z.p3",
+     "6:V.a",
+     -1.0
+    ],
+    [
+     "6:Z.p3",
+     "7:V.c",
+     -3.42
+    ],
+    [
+     "7:Z.p0",
+     "7:V.a",
+     -1.0
+    ],
+    [
+     "7:Z.p0",
+     "0:V.c",
+     -3.42
+    ],
+    [
+     "7:Z.p1",
+     "7:V.a",
+     -1.0
+    ],
+    [
+     "7:Z.p1",
+     "0:V.c",
+     -3.42
+    ],
+    [
+     "7:Z.p2",
+     "7:V.a",
+     -1.0
+    ],
+    [
+     "7:Z.p2",
+     "0:V.c",
+     -3.42
+    ],
+    [
+     "7:Z.p3",
+     "7:V.a",
+     -1.0
+    ],
+    [
+     "7:Z.p3",
+     "0:V.c",
+     -3.42
+    ]
+   ],
+   "settle": 1500,
+   "lap": 40,
+   "write": {
+    "port": "0:V.c",
+    "amp": -11.7
+   },
+   "read": {
+    "ports": [
+     "0:Z.p0",
+     "0:Z.p1",
+     "0:Z.p2",
+     "0:Z.p3"
+    ],
+    "thr": 3.0,
+    "offset": 4
+   }
+  }
+ },
+ "experiments": 87,
+ "cost_unit_ticks": 501441,
+ "cost_at_commit": 76955
+}
